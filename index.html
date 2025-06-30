@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>قناة الأخبار</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <nav>
+    <div class="nav-container">
+      <div class="site-name">قناة الأخبار</div>
+      <ul class="nav-links">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#top-users">المتصدرين</a></li>
+        <li><a href="#earnings-chart">الأرباح</a></li>
+        <li><a href="#install-section">تثبيت</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- الصفحة الرئيسية -->
+  <section id="home" class="section home animate">
+    <div class="home-wrapper">
+      <div class="text-content">
+        <h1>مرحباً بك في<span> نيوزلاب</span></h1>
+        <p>نقدم لك أحدث الأخبار العالمية والمحلية أولاً بأول، من مصادر موثوقة وبطريقة عصرية.</p>
+        <a href="#install-section" class="classic-btn"><i class="fas fa-download"></i> تثبيت التطبيق</a>
+      </div>
+      <div class="logo-container">
+        <img src="images/logo.jpg" alt="شعار الموقع" class="logo-img" />
+      </div>
+    </div>
+  </section>
+
+  <section id="top-users" class="section top-users">
+    <h2 class="title">المتصدرين هذا الأسبوع</h2>
+
+    <div class="top-leaders">
+      <!-- المركز الثاني -->
+      <div class="leader-card second">
+        <div class="avatar" style="background-image: url('avatar2.png');">
+          <span class="rank-badge">2</span>
+        </div>
+        <h3>سارة ابراهيم</h3>
+        <p class="joined">انضم في: 2024-09-01</p>
+        <p>عدد المنشورات: 114</p>
+      </div>
+
+      <!-- المركز الأول -->
+      <div class="leader-card first">
+        <div class="avatar" style="background-image: url('avatar1.png');">
+          <span class="rank-badge">1</span>
+        </div>
+        <h3>محمد أحمد <span class="verified">✔️</span></h3>
+        <p class="joined">انضم في: 2024-11-13</p>
+        <p>عدد المنشورات: 152</p>
+      </div>
+
+      <!-- المركز الثالث -->
+      <div class="leader-card third">
+        <div class="avatar" style="background-image: url('avatar3.png');">
+          <span class="rank-badge">3</span>
+        </div>
+        <h3>علي يوسف</h3>
+        <p class="joined">انضم في: 2024-8-27</p>
+        <p>عدد المنشورات: 98</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="earnings-chart" class="earnings-chart">
+    <h2>رسم بياني للأرباح الأسبوعية</h2>
+    <canvas id="earningsChart" style="width: 80%; height: 400px;"></canvas>
+  </section>
+
+
+  <section id="install-section" class="install-section">
+    <div class="install-content">
+      <div class="app-info">
+        <h2>نيوزلاب</h2>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> مقابل كل 25 منشورًا تقوم بنشره على التطبيق، ستحصل على 5 دولارات نقدًا — شجع متابعيك وأصدقاءك وابدأ في الربح الآن.</li>
+          <li><i class="fas fa-check-circle"></i> المستخدمون النشطون والموثوقون يحصلون على مكافآت وامتيازات حصرية، بما في ذلك زيادة الأرباح وإمكانية الوصول إلى الأخبار العاجلة أولًا.</li>
+          <li><i class="fas fa-check-circle"></i> تنافس مع باقي المستخدمين ضمن قائمة المتصدرين الأسبوعية واربح جوائز إضافية إذا كنت ضمن أفضل 3 ناشرين</li>
+        </ul>
+        <a href="#install" class="install-btn">تثبيت التطبيق</a>
+      </div>
+      <div class="app-screens">
+        <div class="phone-frame">
+          <img src="screen1.png" class="active">
+          <img src="screen2.png">
+          <img src="screen3.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact" class="contact-section">
+    <div class="contact-content">
+      <h2>تواصل معنا</h2>
+      <p>لديك استفسار أو اقتراح؟ نحن في خدمتك دائمًا!</p>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" id="name" placeholder="الاسم الكامل" required>
+        <input type="email" id="email" placeholder="البريد الإلكتروني" required>
+        <textarea id="message" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <button type="submit" class="contact-btn">إرسال</button>
+      </form>
+
+      <div class="contact-info">
+        <p>📧 info@newslab.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 قناة الأخبار - جميع الحقوق محفوظة.
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+        
+      const token = "7946782871:AAGFtkNv5WjKzAip8IaD1d7L2J3xhqMvWCk";
+      const chat_id = "5230358496";
+        
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+        
+      const text = `📬 رسالة جديدة من الموقع:
+    👤 الاسم: ${name}
+    📧 البريد: ${email}
+    📝 الرسالة: ${message}`;
+        
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          chat_id: chat_id,
+          text: text
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        alert('تم إرسال الرسالة بنجاح ✅');
+        document.getElementById('contactForm').reset();
+      })
+      .catch(error => {
+        alert('حدث خطأ أثناء الإرسال ❌');
+        console.error('Error:', error);
+      });
+    });
+    
+  </script>
+  <script>
+    const ctx = document.getElementById('earningsChart').getContext('2d'); 
+    const earningsChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['25', '50', '100', '150', '200'],
+        datasets: [{
+          label: 'الأرباح بالدولار',
+          data: [5, 13, 28, 42, 58],
+          backgroundColor: 'rgba(46, 204, 113, 0.3)',
+          borderColor: '#2ecc71',
+          borderWidth: 3,
+          pointBackgroundColor: '#fff',
+          pointBorderColor: '#2ecc71',
+          tension: 0.3,
+          fill: true
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true, // مهم عشان ما يكبر الرسم مبالغ فيه
+        plugins: {
+          legend: {
+            labels: { color: '#fff', font: { size: 20 } }
+          },
+          tooltip: {
+            callbacks: {
+              label: ctx => `${ctx.parsed.y} دولار`
+            }
+          }
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'عدد المنشورات',
+              color: '#fff',
+              font: { size: 20 }
+            },
+            ticks: { color: '#fff' }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'الأرباح (دولار)',
+              color: '#fff',
+              font: { size: 20 }
+            },
+            ticks: { color: '#fff' }
+          }
+        }
+      }
+    });
+
+  </script>
+  <script>
+    // ظهور العناصر عند التمرير
+    const sections = document.querySelectorAll('.animate');
+    window.addEventListener('scroll', () => {
+      sections.forEach((sec) => {
+        const top = window.scrollY;
+        const offset = sec.offsetTop - 400;
+        const height = sec.offsetHeight;
+        if (top >= offset && top < offset + height) {
+          sec.classList.add('visible');
+        }
+      });
+    });
+  </script>
+  <script>
+    const imgs = document.querySelectorAll('.phone-frame img');
+    let idx = 0;
+    setInterval(() => {
+      imgs[idx].classList.remove('active');
+      idx = (idx + 1) % imgs.length;
+      imgs[idx].classList.add('active');
+    }, 3000);
+  </script>
+</body>
+</html>
