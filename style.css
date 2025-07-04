@@ -429,3 +429,353 @@ footer {
   padding: 20px;
   margin-top: 0px;
 }
+
+
+
+
+@media (max-width: 1280px) {
+  /* home */
+  #home h1{
+    font-size: 22px;
+  }
+
+  #home h1 span{
+    font-size: 42px;
+  }
+
+  #home p{
+    font-size: 14px;
+  }
+
+  .logo-img {
+    width: 240px;
+  }
+
+  .classic-btn {
+    padding: 5px 20px;
+  }
+
+  .classic-btn:hover {
+    padding: 12px 40px;
+  }
+
+  /*top users*/
+
+  #top-users {
+    padding: 50px 0;
+  }
+
+  #top-users h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+
+  .leader-card {
+    width: 320px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .leader-card h3 {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  .leader-card p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  .joined {
+    font-size: 13px;
+  }
+
+  .first {
+    transform: translateY(-20px);
+  }
+
+  .second, .third {
+    transform: translateY(0);
+  }
+
+  /* الارباح */
+
+  .earnings-chart {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+  }
+
+  .earnings-chart h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  /* download */
+ 
+  .install-section {
+    padding: 80px 20px;
+  }
+
+  .app-info {
+    width: 50%;
+  }
+
+  .app-info h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .app-info ul {
+    margin-bottom: 30px;
+  }
+
+  .app-info li {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+
+  .app-info li i {
+    margin-left: 10px;
+  }
+
+  .install-btn {
+    padding: 10px 28px;
+    margin-bottom: 100px;
+    font-weight: 600;
+  }
+
+  .install-btn:hover {
+    padding: 12px 40px;
+  }
+
+  .phone-frame {
+    width: 240px;
+    height: 500px;
+  }
+
+  /* contact */
+  .contact-section {
+    padding: 80px 20px;
+  }
+
+  .contact-section h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .contact-form textarea {
+    height: 120px;
+  }
+
+  .contact-btn {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+
+@media (max-width: 1080px) {
+
+  /*top users*/
+  .leader-card {
+    width: 280px;
+  }
+  /* الارباح */
+
+  .earnings-chart {
+    width: 90%;
+  }
+
+  /* download */
+ 
+
+  .app-info h2 {
+    font-size: 38px;
+  }
+
+  .app-info li {
+    margin: 12px 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .phone-frame {
+    width: 220px;
+    height: 460px;
+  }
+
+  /* contact */
+
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+  }
+
+  .contact-section p {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  .contact-form textarea {
+    height: 120px;
+  }
+
+  .contact-btn {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 50px;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 2;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  /* home */
+  #home {
+    padding-top: 40px;
+  }
+
+  .logo-img {
+    visibility: hidden;;
+  }
+
+  /*top users*/
+
+  #top-users {
+    padding: 30px 30%;
+  }
+
+  .first {
+    transform: scale(1.1)
+  }
+
+  .second, .third {
+    transform: translateY(0);
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  #home {
+    padding: 36% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home .text-content{
+    text-align: center;
+  }
+
+  /*top users*/
+
+  #top-users {
+    padding: 50px 20%;
+  }
+
+  .first {
+    transform: scale(1.1);
+  }
+
+
+  /* الارباح */
+
+  .earnings-chart {
+    width: 90%;
+  }
+
+  /* download */
+ 
+  .install-section {
+    padding: 80px 20px;
+  }
+
+  .app-info {
+    padding-top: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  .phone-frame {
+    width: 240px;
+    height: 500px;
+  }
+
+  .install-btn {
+    display: inline-block;
+    padding: 12px 36px;
+    margin-bottom: 100px;
+  }
+
+  .install-btn:hover {
+    transform: translateY(-2px);
+    padding: 15px 46px;
+    font-size: 18px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  }
+
+
+}
+
+@media (max-width: 590px) {
+
+  .nav-links li {
+    display: none;
+  }
+
+
+  #home {
+    padding: 40% 15%;
+  }
+
+  #top-users h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+}
